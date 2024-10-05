@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIS Webform</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; /* Centers content vertically */
+            height: 100vh;
+            margin: 0;
+            background-image: url(Mis.jpg);
+            background-size: cover;
+			background-position: center;    /* Centers the image */
+            background-repeat: no-repeat;
+			height: 100vh;                  /* Sets the height to 100% of the viewport */
+            width: 100vw;                   /* Sets the width to 100% of the viewport */
+        }
+        h1 {
+			border: 2px solid #2196F3;
+            background-color: #00000060;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+			 font-size: 35px;
+            margin-bottom: 20px;
+            color: white;
+        }
+        .button-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .button-box {
+            border: 2px solid #2196F3;
+            background-color: #00000060;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            width: 300px;
+            backdrop-filter: blur(30px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .button-box button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            background-color: #2196F3;
+            color: white;
+        }
+        .button-box button:hover {
+            background-color: #0b7dda;
+        }
+        .description {
+            margin-top: 10px;
+            font-size: 14px;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>ATPI Service Request Portal</h1>
+    <div class="button-container">
+        <div class="button-box">
+            <button onclick="location.href='MIS.html'">MIS</button>
+            <p class="description">Submit a request to MIS team for data and analytics related reporting queries.</p>
+        </div>
+        <div class="button-box">
+            <button onclick="location.href='SharedServices.html'">Shared Services</button>
+            <p class="description">Submit a request to the Shared Services team for setup or fee related queries.</p>
+        </div>
+        <div class="button-box">
+            <button onclick="location.href='DiscoverySupport.html'">Discovery Support</button>
+            <p class="description">Submit a request to Discovery Support team for Discovery setup related queries.</p>
+        </div>
+        <div class="button-box">
+            <button onclick="location.href='ICEApp.html'">ICE Application</button>
+            <p class="description">Submit a request to ICE Application support team for ARMS, GRIMMS, and Uninvoiced portal.</p>
+        </div>
+    </div>
+</body>
+</html>
